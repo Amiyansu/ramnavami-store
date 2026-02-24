@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Shree Ram - Ram Navami Special Store</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- WhatsApp Sticky Icon -->
+    <a href="https://wa.me/917381065506?text=Hari%20Om!%20I%20have%20an%20inquiry." class="sticky-whatsapp"
+        target="_blank" aria-label="WhatsApp Us">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#">
+                    <!-- Download: A clear text or image logo of "Jay Shree Ram" with transparent background -->
+                    <img src="images/logo.png" alt="Jay Shree Ram Logo"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span class="logo-text" style="display:none; color: var(--saffron-dark);">JAY SHREE RAM</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#apparel">Apparel</a></li>
+                <li><a href="#flags">Flags & Decor</a></li>
+                <li><a href="#puja">Puja Samagri</a></li>
+                <li><a href="#services">Priest Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <button class="cart-btn" onclick="toggleCart()">
+                        <i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span>
+                    </button>
+                </li>
+            </ul>
+            <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div id="particles-js"></div>
+        <div class="hero-content">
+            <h1>Celebrate Ram Navami</h1>
+            <p>Premium Divine Apparel, Flags, & Authentic Vedic Services</p>
+            <a href="#apparel" class="btn btn-primary">Shop Now</a>
+        </div>
+        <!-- Download: A high quality, wide (landscape) Ram Navami celebration image or Ram Ji wallpaper -->
+        <div class="hero-bg-overlay" style="background-image: url('images/ram_hero_banner.jpg');"></div>
+    </header>
+
+    <main>
+        <!-- Apparel Section -->
+        <section id="apparel" class="section">
+            <h2 class="section-title">Divine Apparel <span>(Men & Women)</span></h2>
+            <div class="product-grid" id="apparel-grid">
+                <!-- Products generated via JS -->
+            </div>
+        </section>
+
+        <!-- Flags and Balloons -->
+        <section id="flags" class="section bg-light">
+            <h2 class="section-title">Flags & Decor <span>(Bhagwa Dhwaj & Mahavir Flags)</span></h2>
+            <div class="product-grid" id="flags-grid">
+                <!-- Products generated via JS -->
+            </div>
+        </section>
+
+        <!-- Puja Samagri -->
+        <section id="puja" class="section">
+            <h2 class="section-title">Puja Samagri <span>Essentials for Ram Navami</span></h2>
+            <div class="product-grid" id="puja-grid">
+                <!-- Products generated via JS -->
+            </div>
+        </section>
+
+        <!-- Priest Services -->
+        <section id="services" class="section bg-light service-section">
+            <div class="service-container">
+                <div class="service-content">
+                    <h2 class="section-title" style="text-align: left;">Authentic Vedic Priest Services</h2>
+                    <p>Hire experienced Vedic priests for personalized Ram Navami rituals, Homa, and ceremonies at your
+                        home or society pandal.</p>
+                    <a href="https://wa.me/917381065506?text=Jai%20Shree%20Ram!%20I%20would%20like%20to%20book%20a%20Vedic%20Priest%20for%20Ram%20Navami%20pooja."
+                        target="_blank" class="btn btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i> Book via WhatsApp
+                    </a>
+                </div>
+                <div class="service-image">
+                    <!-- Download: A high-quality photo of a Hindu priest performing a homa or doing aarti -->
+                    <img src="images/priest_service.jpg" alt="Vedic Priest Services"
+                        onerror="this.onerror=null; this.src='https://via.placeholder.com/500x400/ff9933/ffffff?text=Priest+Photo+Here'">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Jay Shree Ram Store</h3>
+                <p>Your one-stop destination for all premium Ram Navami merchandise, flags, puja samagri, and authentic
+                    priest services.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#apparel">Apparel</a></li>
+                    <li><a href="#flags">Flags</a></li>
+                    <li><a href="#puja">Puja Samagri</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone-alt"></i> +91 73810 65506</p>
+                <a href="https://wa.me/917381065506" target="_blank" class="btn btn-whatsapp sm"><i
+                        class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Jay Shree Ram Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay" id="cart-overlay" onclick="toggleCart()"></div>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-btn" onclick="toggleCart()">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items-container">
+            <!-- Items dynamically injected -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <p>Total Items: <span id="cart-total-count">0</span></p>
+            </div>
+            <button class="btn btn-whatsapp full-width" onclick="checkoutWhatsApp()">
+                <i class="fab fa-whatsapp"></i> Order on WhatsApp
+            </button>
+            <p class="cart-note">*Payment details will be shared on WhatsApp</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/particles.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
